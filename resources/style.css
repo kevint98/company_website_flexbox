@@ -1,0 +1,310 @@
+/* Universal Styles */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16;
+	font-family: 'Raleway', sans-serif;
+	color: #0f2d40;
+}
+
+body {
+	background-color: #d8f2f0;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	padding-bottom: 0.3125rem;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
+
+#btn {
+	border: none;
+	font-size: 1rem;
+	padding: 0.625rem;
+	margin-left: 0.625rem;
+	border-radius: 0.625rem;
+	color: #3e8c84;
+	background-color: #d8f2f0;
+}
+
+#btn:hover {
+	color: #d8f2f0;
+	background-color: #3e8c84;
+}
+
+.mobile {
+	display: none;
+}
+
+main {
+	padding-top: 70px; /* Offset fixed header*/
+}
+
+.description {
+	background-color: #3e8c84;
+	color: #d8f2f0;
+	opacity: 0.8;
+	width: 100%;
+}
+
+.acting,
+.dance,
+.music,
+.stage,
+.cafe,
+.library,
+.evan,
+.kimberley,
+.roderick,
+.aydan {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Navigation */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	background-color: #0f2d40;
+	padding: 1.25rem;
+	position: fixed;
+	z-index: 1;
+}
+
+nav img {
+	height: 70px;
+	padding: 0.625rem;
+}
+
+.desktop {
+	display: flex;
+	align-items: center;
+}
+
+nav li {
+	display: inline;
+	padding: 0.625rem;
+	font-size: 1.25rem;
+}
+nav a {
+	text-decoration: none;
+	color: #d8f2f0;
+}
+
+@media only screen and (max-width: 768px) {
+	nav {
+		background-color: #3e8c84;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	nav img .mobile {
+		height: 70px;
+		padding: 0.625rem;
+	}
+
+	.mobile {
+		display: block;
+		position: relative;
+	}
+
+	h1 {
+		font-size: 2.75rem;
+		padding: 0 0.625rem;
+	}
+}
+
+/* Mission */
+
+#mission {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url('./images/mask1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 90vh;
+	font-style: italic;
+}
+
+#mission h1 {
+	color: #0f2d40;
+}
+
+@media only screen and (max-width: 768px) {
+	#mission {
+		background-position: 80% 0%;
+	}
+}
+
+/* Services Section */
+
+section#services {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.title {
+	margin: 1.25rem 0.625rem 0;
+}
+
+#services-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.service {
+	width: 18.75rem;
+	height: 18.75rem;
+	display: flex;
+	align-items: flex-end;
+	margin: 0.625rem;
+	flex-grow: 1;
+}
+
+.acting {
+	background-image: url('./images/acting.jpg');
+	background-position: left;
+}
+
+.dance {
+	background-image: url('./images/dance.jpg');
+}
+
+.music {
+	background-image: url('./images/music.jpg');
+}
+
+.stage {
+	background-image: url('./images/stage.jpg');
+}
+
+.cafe {
+	background-image: url('./images/cafe.jpg');
+}
+
+.library {
+	background-image: url('./images/library.jpg');
+}
+
+/* Team */
+
+section#team {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+}
+
+section .title {
+	width: 100%;
+}
+
+#team-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.member {
+	width: 17rem;
+	height: 20.75rem;
+	display: flex;
+	align-items: flex-end;
+	margin: 0.3125rem;
+	flex-grow: 1;
+}
+
+.evan {
+	background-image: url('./images/evanbrasher.jpg');
+}
+
+.kimberley {
+	background-image: url('./images/kimberleydawson.jpg');
+}
+
+.roderick {
+	background-image: url('./images/rodericklyne.jpg');
+}
+
+.aydan {
+	background-image: url('./images/aydanlowell.jpg');
+}
+
+.tamara {
+	background-image: url('./images/tamaraherbertson.jpg');
+	background-size: cover;
+	background-position: 0% 20%;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+	flex-basis: 17rem;
+}
+
+/* Contact */
+
+#contact {
+	display: flex;
+	margin: 3.125rem 0;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact-container {
+	margin: 1.875rem;
+}
+
+#map img {
+	width: 23.125rem;
+	height: 18.75rem;
+	margin: 1.875rem;
+}
+
+@media only screen and (max-width: 768px) {
+	#contact {
+		flex-flow: column wrap;
+	}
+
+	#contact-container {
+		text-align: center;
+	}
+
+	#map img {
+		width: 18.75rem;
+		height: 17.1875rem;
+		margin: auto;
+	}
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 0.9rem;
+}
